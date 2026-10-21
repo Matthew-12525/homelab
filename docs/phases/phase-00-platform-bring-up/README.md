@@ -14,7 +14,7 @@ The phase ends at the first successful local Ubuntu login. Post-install validati
 
 ### Front I/O
 
-![Initial front-panel inspection](phase0-01.png)
+![Initial front-panel inspection](phase00-01.png)
 
 Initial physical inspection of the Dell OptiPlex 7050, including the chassis and front I/O.
 
@@ -22,7 +22,7 @@ The system was documented before making hardware or software changes so the orig
 
 ### Rear I/O
 
-![Rear I/O inspection](phase0-02.png)
+![Rear I/O inspection](phase00-02.png)
 
 Rear I/O inspection of the OptiPlex 7050 before deployment.
 
@@ -34,7 +34,7 @@ The rear panel was documented to establish the available wired networking, displ
 
 ### Windows Hardware and Software Baseline
 
-![Windows hardware baseline](phase0-03.png)
+![Windows hardware baseline](phase00-03.png)
 
 Hardware and Windows baseline captured from the system's existing Windows 10 installation.
 
@@ -51,7 +51,7 @@ This provided a reference point for the hardware that Ubuntu Server would later 
 
 ### Storage Health Check
 
-![SSD health inspection](phase0-04.png)
+![SSD health inspection](phase00-04.png)
 
 PowerShell storage checks showed the installed NVMe SSD as online and reported healthy before the operating-system migration.
 
@@ -63,7 +63,7 @@ The checks also documented the disk model, partition style, capacity, and availa
 
 ### UEFI/BIOS Inspection
 
-![Dell BIOS virtualization menu](phase0-05.png)
+![Dell BIOS virtualization menu](phase00-05.png)
 
 Dell UEFI/BIOS inspection of the system's virtualization-related settings.
 
@@ -71,7 +71,7 @@ This screenshot documents review of the available virtualization configuration o
 
 ### Windows Integrity Check
 
-![DISM and SFC checks](phase0-06.png)
+![DISM and SFC checks](phase00-06.png)
 
 Windows integrity checks were performed using DISM and System File Checker.
 
@@ -79,7 +79,7 @@ DISM reported no component-store corruption. The initial `sfc /scannow` run foun
 
 ### Follow-Up Integrity Verification
 
-![Follow-up SFC verification](phase0-07.png)
+![Follow-up SFC verification](phase00-07.png)
 
 A second System File Checker run reported no remaining integrity violations after the previous repair.
 
@@ -91,7 +91,7 @@ This provided a simple detect → repair → verify workflow before replacing th
 
 ### Ubuntu Server ISO Hash
 
-![Ubuntu ISO SHA-256 calculation](phase0-08.png)
+![Ubuntu ISO SHA-256 calculation](phase00-08.png)
 
 A SHA-256 hash was calculated for the downloaded Ubuntu Server installation image using PowerShell's `Get-FileHash` command before the ISO was used for installation media.
 
@@ -101,7 +101,7 @@ A SHA-256 hash was calculated for the downloaded Ubuntu Server installation imag
 
 ### Dell ePSA Diagnostics
 
-![Dell ePSA diagnostics](phase0-09.png)
+![Dell ePSA diagnostics](phase00-09.png)
 
 Dell ePSA pre-boot diagnostics completed successfully before Ubuntu Server installation.
 
@@ -113,7 +113,7 @@ The built-in diagnostic suite reported that all tested hardware passed.
 
 ### Storage Configuration
 
-![Ubuntu storage configuration](phase0-10.png)
+![Ubuntu storage configuration](phase00-10.png)
 
 Ubuntu Server storage configuration using LVM with separate EFI and `/boot` partitions.
 
@@ -125,7 +125,7 @@ The installation layout included:
 
 ### First Successful Local Login
 
-![First Ubuntu Server login](phase0-11.png)
+![First Ubuntu Server login](phase00-11.png)
 
 First successful local login to Ubuntu Server 26.04.1 LTS after installation to the OptiPlex's internal SSD.
 
