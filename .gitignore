@@ -1,0 +1,17 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary and generated files
+*.tmp
+*.log
+.cache/
