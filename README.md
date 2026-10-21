@@ -13,5 +13,6 @@ Documentation and supporting files for building and operating the homelab.
 
 ## Project phases
 
-- [Phase 0 - Platform Bring-Up & OS Deployment](docs/phases/phase-00-platform-bring-up/)
+- [Phase 0 — Platform Bring-Up & OS Deployment](docs/phases/phase-00-platform-bring-up/)
+- [Phase 1 — Baseline Validation & Secure Remote Administration](docs/phases/phase-01-baseline-validation-secure-remote-administration/)
 - Later phases will be added as the homelab evolves.
